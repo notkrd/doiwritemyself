@@ -1,0 +1,2 @@
+#lang racket
+((λ (i-write-myself-to-be-written) `(,i-write-myself-to-be-written ',i-write-myself-to-be-written)) '(λ (i-write-myself-to-be-written) `(,i-write-myself-to-be-written ',i-write-myself-to-be-written)))

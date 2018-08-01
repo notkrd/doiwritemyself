@@ -1,0 +1,6 @@
+(ns d (:require [clojure.string :refer [includes?]]))
+(defn w [t] (print "Can i, writing these words, be found in these words?")
+ (includes? ((eval (read-string t)) t) t))
+(defn s [t] ((eval (read-string t)) t))
+(def i "(fn [o] (if (w o) \"\" o))")
+(s i)
